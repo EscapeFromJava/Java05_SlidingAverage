@@ -3,15 +3,16 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Ââåäèòå êîë-âî ýëåìåíòîâ â ìàññèâå");
+        System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ");
         int n = scan.nextInt();
-        System.out.println("Ââåäèòå êîë-âî ýëåìåíòîâ \"ñêîëüæåíèÿ\"");
+        System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² \"ÑÐºÐ¾Ð»ÑŒÐ¶ÐµÐ½Ð¸Ñ\"");
         int m = scan.nextInt();
         int[] arr = GetRandomArray(n);
-        System.out.println("Èñõîäíûé ìàññèâ >> " + Arrays.toString(arr));
-        System.out.println("Ìàññèâ ñêîëüçèùåãî ñðåäíåãî >> " + Arrays.toString(GetSlidingAverage(arr, m)));
+        System.out.println("Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² >> " + Arrays.toString(arr));
+        System.out.println("ÐœÐ°ÑÑÐ¸Ð² ÑÐºÐ¾Ð»ÑŒÐ·Ð¸Ñ‰ÐµÐ³Ð¾ ÑÑ€ÐµÐ´Ð½ÐµÐ³Ð¾ >> " + Arrays.toString(GetSlidingAverage(arr, m)));
     }
 
     public static int[] GetRandomArray(int n){
